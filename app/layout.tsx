@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./NavBar";
 import AuthProvider from "./auth/Provider";
+import GoogleAnalyticsScript from "./GoogleAnalyticsScript";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="luxury">
+      {/* <GoogleAnalyticsScript /> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
