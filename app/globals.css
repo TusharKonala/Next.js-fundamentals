@@ -8,12 +8,13 @@
   --foreground: #171717;
 }
 
-/* @theme inline {
-  --color-background: var(--background);
+@theme inline {
+  /* --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-} */
+  --font-mono: var(--font-geist-mono); */
+  --font-main: var(--font-poppins);
+}
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -30,6 +31,7 @@ body {
 
 @layer components {
   h1 {
-    @apply font-extrabold text-2xl mb-3;
+    @apply font-extrabold text-2xl mb-3 font-main;
   }
+  /* added font-main here so that its applied to all h1 elements*/
 }
